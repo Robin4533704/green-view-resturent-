@@ -1,0 +1,289 @@
+[
+  {
+    "id": 1,
+    "name": "Davet Sofras Yemekleri: Muhteşem Tarifler",
+    "thumbnail": "https://i.ibb.co/p6j9ZKLv/download-2.jpg",
+    "banner": "https://i.ibb.co/p6j9ZKLv/download-2.jpg",
+    "frequency": "Daily/Weekly/Monthly",
+    "price": 150.00,
+    "description": "Bangladesh's first-ever meal subscription service offering customizable, chef-crafted dishes delivered to your doorstep.",
+    "tech_category": "Meal Subscription",
+    "features": [
+      "Customizable Meals",
+      "Flexible Delivery Options",
+      "Trusted Kitchens"
+    ],
+    "subscription_benefits": [
+      "Hassle-Free Meals",
+      "Personalized Portions",
+      "Fresh Ingredients"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 250
+  },
+  {
+    "id": 2,
+    "name": "MealBox",
+    "thumbnail": "https://i.ibb.co/1GTGdLcp/download-3.jpg",
+    "banner": "https://i.ibb.co/1GTGdLcp/download-3.jpg",
+    "frequency": "Daily",
+    "price": 12.00,
+    "description": "Enjoy a diverse range of meals from handpicked restaurants at a fixed daily price, plus free doorstep delivery.",
+    "tech_category": "Restaurant Subscription",
+    "features": [
+      "Curated Restaurants",
+      "Pause or Cancel Anytime",
+      "Flat Rate Meals"
+    ],
+    "subscription_benefits": [
+      "No Hidden Charges",
+      "Flexible Delivery",
+      "Easy Ordering"
+    ],
+    "ratings": 4.5,
+    "number_of_reviews": 180
+  },
+  {
+    "id": 3,
+    "name": "CookUnity",
+    "thumbnail": "https://i.ibb.co/0yRwvg8q/download-4.jpg",
+    "banner": "https://i.ibb.co/0yRwvg8q/download-4.jpg",
+    "frequency": "Weekly",
+    "price": 10.99,
+    "description": "Restaurant-quality dinners crafted by private chefs and delivered to your home.",
+    "tech_category": "Chef-Prepared Meals",
+    "features": [
+      "Chef-Crafted Dishes",
+      "Recyclable Packaging",
+      "Minimal Preparation"
+    ],
+    "subscription_benefits": [
+      "Access to Master Classes",
+      "Farm-Fresh Ingredients",
+      "Flexible Plans"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 320
+  },
+  {
+    "id": 4,
+    "name": "Omaha Steaks Subscription",
+    "thumbnail": "https://i.ibb.co/0p1RB30X/download-6.jpg",
+    "banner": "https://i.ibb.co/0p1RB30X/download-6.jpg",
+    "frequency": "Monthly",
+    "price": 134.99,
+    "description": "High-quality meats, seafood, desserts, and sides delivered to your door.",
+    "tech_category": "Meat Subscription",
+    "features": [
+      "Customizable Plans",
+      "Free Shipping",
+      "Premium Selections"
+    ],
+    "subscription_benefits": [
+      "12 Free Burgers per Order",
+      "Thank-You Gifts",
+      "10% Savings on Orders"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 290
+  },
+  {
+    "id": 5,
+    "name": "Gousto",
+    "thumbnail": "https://www.gousto.co.uk/images/gousto-thumbnail.jpg",
+    "banner": "https://www.gousto.co.uk/images/gousto-banner.jpg",
+    "frequency": "Weekly",
+    "price": 2.99,
+    "description": "UK-based meal delivery service offering a wide variety of recipes and easy-to-follow instructions.",
+    "tech_category": "Meal Kit",
+    "features": [
+      "200+ Recipe Selection",
+      "High-Quality Produce",
+      "Clear Recipe Cards"
+    ],
+    "subscription_benefits": [
+      "Flexible Plans",
+      "Portion Control",
+      "Promotional Discounts"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 310
+  },
+  {
+    "id": 6,
+    "name": "Food Darzee",
+    "thumbnail": "https://www.fooddarzee.com/images/fooddarzee-thumbnail.jpg",
+    "banner": "https://www.fooddarzee.com/images/fooddarzee-banner.jpg",
+    "frequency": "Daily",
+    "price": 188.00,
+    "description": "Customized, healthy, and delicious meals tailored to diverse dietary needs.",
+    "tech_category": "Nutrition Subscription",
+    "features": [
+      "Personalized Nutrition Plans",
+      "Diverse Meal Options",
+      "Doorstep Delivery"
+    ],
+    "subscription_benefits": [
+      "Flexible Subscription Plans",
+      "Specialized Programs",
+      "In-House Nutritionists"
+    ],
+    "ratings": 4.5,
+    "number_of_reviews": 275
+  },
+  {
+    "id": 7,
+    "name": "Graze",
+    "thumbnail": "https://www.graze.com/images/graze-thumbnail.jpg",
+    "banner": "https://www.graze.com/images/graze-banner.jpg",
+    "frequency": "Weekly",
+    "price": 13.99,
+    "description": "UK-based snack company offering over 200 snack combinations through subscription boxes.",
+    "tech_category": "Snack Subscription",
+    "features": [
+      "Sweet and Savory Snacks",
+      "Vegan Options",
+      "Customizable Boxes"
+    ],
+    "subscription_benefits": [
+      "Healthy Snacking",
+      "Convenient Delivery",
+      "No Repetition"
+    ],
+    "ratings": 4.4,
+    "number_of_reviews": 260
+  },
+  {
+    "id": 8,
+    "name": "HelloFresh",
+    "thumbnail": "https://www.hellofresh.com/images/hellofresh-thumbnail.jpg",
+    "banner": "https://www.hellofresh.com/images/hellofresh-banner.jpg",
+    "frequency": "Weekly",
+    "price": 8.99,
+    "description": "Meal kit service offering easy-to-follow recipes made from high-quality ingredients.",
+    "tech_category": "Meal Kit",
+    "features": [
+      "100+ Weekly Menu Items",
+      "Pre-Measured Ingredients",
+      "Flexible Plans"
+    ],
+    "subscription_benefits": [
+      "Skip Weeks Anytime",
+      "Change Delivery Days",
+      "Add Extra Meals Easily"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 300
+  },
+  {
+    "id": 9,
+    "name": "Cook it",
+    "thumbnail": "https://chefcookit.com/images/cookit-thumbnail.jpg",
+    "banner": "https://chefcookit.com/images/cookit-banner.jpg",
+    "frequency": "Weekly",
+    "price": 9.99,
+    "description": "Canadian meal kit service delivering ingredient bags and recipe cards for various meals.",
+    "tech_category": "Meal Kit",
+    "features": [
+      "Ready-to-Eat Meals",
+      "Pantry Shop",
+      "Sustainable Packaging"
+    ],
+    "subscription_benefits": [
+      "Customizable Boxes",
+      "Flexible Scheduling",
+      "Eco-Friendly Options"
+    ],
+    "ratings": 4.5,
+    "number_of_reviews": 240
+  },
+  {
+    "id": 10,
+    "name": "Oota Box",
+    "thumbnail": "https://ootabox.com/images/ootabox-thumbnail.jpg",
+    "banner": "https://ootabox.com/images/ootabox-banner.jpg",
+    "frequency": "Daily/Weekly",
+    "price": 180.00,
+    "description": "Home-cooked meals delivered by local home chefs, tailored to individual preferences.",
+    "tech_category": "Home Chef Subscription",
+    "features": [
+      "Customizable Meals",
+      "Healthier Choices",
+      "Authentic Recipes"
+    ],
+    "subscription_benefits": [
+      "Flexible Delivery",
+      "Sustainable Options",
+      "Personalized Dishes"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 220
+  },
+  {
+    "id": 11,
+    "name": "Cookr",
+    "thumbnail": "https://website.cookr.in/images/cookr-thumbnail.jpg",
+    "banner": "https://website.cookr.in/images/cookr-banner.jpg",
+    "frequency": "Daily",
+    "price": 160.00,
+    "description": "Home-cooked meals customized to your taste, schedule, and lifestyle.",
+    "tech_category": "Home Chef Subscription",
+    "features": [
+      "Convenient Delivery",
+      "Flexible Scheduling",
+      "Homemade Quality"
+    ],
+    "subscription_benefits": [
+      "Customizable Plans",
+      "Healthy Meals",
+      "Affordable Pricing"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 210
+  },
+  {
+    "id": 12,
+    "name": "Panera Bread - Unlimited Sip Club",
+    "thumbnail": "https://www.panerabread.com/images/panera-thumbnail.jpg",
+    "banner": "https://www.panerabread.com/images/panera-banner.jpg",
+    "frequency": "Monthly",
+    "price": 8.99,
+    "description": "Unlimited coffee and other beverages with Panera's subscription service.",
+    "tech_category": "Beverage Subscription",
+    "features": [
+      "Unlimited Coffee",
+      "Exclusive Member Benefits",
+      "Digital Ordering"
+    ],
+    "subscription_benefits": [
+      "Increased Visit Frequency",
+      "Loyalty Rewards",
+      "Convenient Access"
+    ],
+    "ratings": 4.3,
+    "number_of_reviews": 200
+  },
+  {
+    "id": 12,
+    "name": "Panera Bread - Unlimited Sip Club",
+    "thumbnail": "https://www.panerabread.com/images/panera-thumbnail.jpg",
+    "banner": "https://www.panerabread.com/images/panera-banner.jpg",
+    "frequency": "Monthly",
+    "price": 8.99,
+    "description": "Unlimited coffee and other beverages with Panera's subscription service.",
+    "tech_category": "Beverage Subscription",
+    "features": [
+      "Unlimited Coffee",
+      "Exclusive Member Benefits",
+      "Digital Ordering"
+    ],
+    "subscription_benefits": [
+      "Increased Visit Frequency",
+      "Loyalty Rewards",
+      "Convenient Access"
+    ],
+    "ratings": 4.3,
+    "number_of_reviews": 200
+  }
+]
+ 
