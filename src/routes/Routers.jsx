@@ -4,6 +4,7 @@ import Login from "../layouts/pages/login/Login";
 import FoodItems from "../layouts/pages/login/fooditems/FoodItems";
 import Banner from "../Componets/navber/banner/Banner";
 import Home from "../layouts/pages/Home";
+import SubscriptionList from "../layouts/pages/SubscriptionList/SubscriptionList";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
        },{
           path: "/",
           element: <Home/>
+       },
+       {
+        path: "/subscriptionList",
+        element: <SubscriptionList/>
        }
     
     ]
