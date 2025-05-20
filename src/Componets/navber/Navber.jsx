@@ -42,8 +42,8 @@ const Navber = () => {
         </div>
         <p className="flex items-center lg:gap-2 text-3xl font-bold md:flex">
           <img className='w-[45px] h-[40px] lg:block hidden rounded-full' src={food} alt="logo" />
-          <span className='text-green-500'>Green</span>
-          <span className='text-yellow-400 flex items-center'>View</span>
+          <span className='text-green-500 lg:block hidden'>Green</span>
+          <span className='text-yellow-400 flex items-center lg:block hidden'>View</span>
         </p>
       </div>
 

@@ -13,8 +13,8 @@ const FoodList = () => {
   }
     return (
       <div>
-        <h1 className='text-center pt-24 text-4xl font-bold'>italiyan Food</h1>
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+        <h1 className='text-center mt-24 lg:mb-12 md:mb-12 m-6  text-4xl font-bold'>Italiyan Food</h1>
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 m-2">
       {foodlist.map(item => (
         <FoodCard key={item.id} foodcategory={item} />
       ))}

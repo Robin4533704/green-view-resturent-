@@ -8,7 +8,7 @@ const FoodDetails = () => {
   
   const {banner,features,name,description,number_of_reviews,ratings,price,frequency,subscription_benefits,tech_category}=singleFood
   return (
-    <div className='mb-10 mt-14'>
+    <div className='mb-10 mt-14 m-4'>
       
       <div className='flex flex-col lg:flex-row md:flex-col gap-8'>
         <div className='bg-gray-100 rounded-2xl md:pl-[220px]  lg:p-12'>

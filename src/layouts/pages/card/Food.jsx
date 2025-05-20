@@ -5,9 +5,9 @@ const Food = ({foodcategory}) => {
   if (!foodcategory) return null;
   const {thumbnail,id,name,description,ratings,price,frequency,subscription_benefits}= foodcategory;
     return (
-        <div className="card bg-base-100 border shadow">
+        <div className=" m-2 card bg-base-100  shadow">
   <figure className='bg-blue-100 '>
-    <img className=' h-[230px]  rounded-2xl'
+    <img className=' lg:h-[230px]  rounded-2xl'
       src={thumbnail}
       alt="Shoes" />
   </figure>
@@ -21,7 +21,7 @@ const Food = ({foodcategory}) => {
        </div>
     <p>{description}</p>
 
-     <div className="flex justify-between border-y-2 border-dashed  items-center mt-3 px-4 mb-2">
+     <div className="flex justify-between border-y-2 border-dashed  items-center mt-3 mb-2">
           <span className="text-green-600 font-semibold">${price}</span>
           <div><p>{frequency}</p></div>
           <div className="flex items-center text-yellow-500">
