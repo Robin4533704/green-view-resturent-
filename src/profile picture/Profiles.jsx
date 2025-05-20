@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../provider/AuthProvider';
+
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../provider/AuthProvider';
 
 
 const Profiles = () => {
@@ -22,11 +23,11 @@ const Profiles = () => {
 
       <div className="flex justify-center mb-4">
         <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-300">
-          <img
-            src={user?.photoURL || "https://via.placeholder.com/150"}
-            alt=""
-            className="w-full h-full object-cover"
-          />
+        <img
+  src={user?.photoURL || "https://via.placeholder.com/150"}
+  alt="Profile"
+  className="w-full h-full object-cover"
+/>
         </div>
       </div>
 

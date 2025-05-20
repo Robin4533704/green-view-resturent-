@@ -1,57 +1,65 @@
 import React, { use, useState } from 'react';
  import { ToastContainer, toast } from 'react-toastify';
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../provider/AuthProvider';
+
  import { FcGoogle } from "react-icons/fc";
+import { AuthContext } from '../../provider/AuthProvider';
+
+
+
 const Register = () => {
-  const [nameError, setNameError] = useState("")
-  const {createUser, setUser, updateUser} = use(AuthContext)
+    const {createUser, setUser, updateUser} = use(AuthContext)
   const navigate = useNavigate()
-  const handleRegister=(e)=>{
-e.preventDefault();
-console.log(e.target);
-const form= e.target;
-const name= form.name.value;
-if(name.length <5){
-  setNameError("Name must be at least 5 characters long")
-  return;
-}
-else{
-  setNameError("")
-}
-const photo= form.photo.value;
-if (!photo || photo.trim().length === 0) {
-  setNameError("Photo URL is required");
-} else if (photo.length > 5000) {
-  toast.error("Photo URL too long. Use a smaller image URL.");
-  return;
-}
 
-const email= form.email.value;
-const password= form.password.value;
-console.log({name,photo,email,password});
+  const [nameError, setNameError] = useState('');
+const [photoError, setPhotoError] = useState('');
 
-createUser(email,password)
-.then(result=>{
-  const user = result.user;
- updateUser({ displayName: name, photoURL: photo})
-.then(()=>{
- setUser({...user, displayName: name, photoURL: photo});
+const handleRegister = (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.name.value;
+  const photo = form.photo.value.trim();
+  const email = form.email.value;
+  const password = form.password.value;
 
- navigate("/")
-})
- .catch((error) => {
-            console.log("Profile update error:", error);
-            toast.error("Profile update failed.");
-            setUser(user);
+  // নামের যাচাই
+  if (name.length < 5) {
+    setNameError("Name must be at least 5 characters long");
+    return;
+  } else {
+    setNameError('');
+  }
+
+  // ছবি URL যাচাই
+  if (!photo || photo.length === 0) {
+    setPhotoError("Photo URL is required");
+    return;
+  } else if (photo.length > 5000) {
+    toast.error("Photo URL too long. Use a smaller image URL.");
+    return;
+  } else {
+    setPhotoError('');
+  }
+
+  // ইউজার ক্রিয়েট
+  createUser(email, password)
+    .then((result) => {
+      const user = result.user;
+      updateUser({ displayName: name, photoURL: photo })
+        .then(() => {
+          setUser({ ...user, displayName: name, photoURL: photo });
+          navigate("/");
+        })
+        .catch((error) => {
+          console.log("Profile update error:", error);
+          toast.error("Profile update failed.");
         });
-})
-  .catch((error) => {
+    })
+    .catch((error) => {
       console.log("Registration error:", error);
       toast.error("Your account registration failed.");
     });
-
-  }
+};
     return (
       <div className="hero bg-base-200 min-h-screen ">
   <div className="hero-content flex-col lg:flex-row-reverse lg:mt-18">
@@ -67,6 +75,7 @@ createUser(email,password)
 
           <label className="label">Photo URL</label>
           <input type="text" name='photo' className="input" placeholder="Photo URL" required />
+          {photoError && <P className='text-red-500'>{photoError}</P>}
           <label className="label">Email</label>
           <input type="email" name='email' className="input" placeholder="Email" required/>
           <label className="label">Password</label>
@@ -79,6 +88,7 @@ createUser(email,password)
              </div>
         <p>Don't have an account? <Link to='/auth/login'><a className='text-blue-500 underline'>Login new</a></Link></p>
       </form>
+      < ToastContainer></ToastContainer>
     </div>
   </div>
 </div>
