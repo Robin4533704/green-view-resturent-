@@ -264,7 +264,7 @@
     "number_of_reviews": 200
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Panera Bread - Unlimited Sip Club",
     "thumbnail": "https://images.immediate.co.uk/production/volatile/sites/30/2014/01/Top-10-foods-to-try-in-Japan-9763a03.jpg",
     "banner": "https://images.immediate.co.uk/production/volatile/sites/30/2014/01/Top-10-foods-to-try-in-Japan-9763a03.jpg",
@@ -284,6 +284,50 @@
     ],
     "ratings": 4.3,
     "number_of_reviews": 200
+  },
+  {
+    "id": 14,
+    "name": "pasta chize",
+    "thumbnail": "https://shomoyeralo.com/2022/06/15/salo_1655298120.jpg",
+    "banner": "https://shomoyeralo.com/2022/06/15/salo_1655298120.jpg",
+    "frequency": "Daily",
+    "price": 12.00,
+    "description": "Enjoy a diverse range of meals from handpicked restaurants at a fixed daily price, plus free doorstep delivery.",
+    "tech_category": "Restaurant Subscription",
+    "features": [
+      "Curated Restaurants",
+      "Pause or Cancel Anytime",
+      "Flat Rate Meals"
+    ],
+    "subscription_benefits": [
+      "No Hidden Charges",
+      "Flexible Delivery",
+      "Easy Ordering"
+    ],
+    "ratings": 4.5,
+    "number_of_reviews": 180
+  },
+  {
+    "id": 15,
+    "name": "Kacchi biriany",
+    "thumbnail": "https://fornopiombo.com/cdn/shop/articles/Delicious-Italian-Style-Menu-Items-To-Serve-At-Your-Dream-Restaurant.jpg?v=1658443933",
+    "banner": "https://fornopiombo.com/cdn/shop/articles/Delicious-Italian-Style-Menu-Items-To-Serve-At-Your-Dream-Restaurant.jpg?v=1658443933",
+    "frequency": "Daily/Weekly",
+    "price": 180.00,
+    "description": "Home-cooked meals delivered by local home chefs, tailored to individual preferences.",
+    "tech_category": "Home Chef Subscription",
+    "features": [
+      "Customizable Meals",
+      "Healthier Choices",
+      "Authentic Recipes"
+    ],
+    "subscription_benefits": [
+      "Flexible Delivery",
+      "Sustainable Options",
+      "Personalized Dishes"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 220
   }
 ]
 
