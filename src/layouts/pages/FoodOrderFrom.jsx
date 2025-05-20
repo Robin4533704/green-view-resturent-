@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; // 🔹 useNavigate যোগ করো
-
+import swal from 'sweetalert';
+ import { ToastContainer, toast } from 'react-toastify';
 const FoodOrderForm = () => {
   const { id } = useParams();
   const navigate = useNavigate(); // 🔹 navigate ফাংশন ডিফাইন করো
@@ -47,8 +48,17 @@ const FoodOrderForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`অর্ডার সফল! ${foodName} - পরিমাণ: ${quantity} - তারিখ: ${date}`);
-    navigate('/'); // 🔹 হোমপেজে নিয়ে যাও
+   swal({
+      title: 'অর্ডার সফল!',
+      text: `${foodName} - পরিমাণ: ${quantity} -মূল্য: ${totalPrice} - তারিখ: ${date}`,
+      icon: 'success',
+      button: 'ঠিক আছে',
+      }).then(() => {
+  toast("Your Order successful!");
+  setTimeout(() => {
+    navigate('/');
+  }, 3500); // টোস্ট দেখার জন্য কিছু সময় দিন
+});
   };
 
   const totalPrice = (quantity * selectedFood.price).toFixed(2);
@@ -98,7 +108,7 @@ const FoodOrderForm = () => {
             readOnly
           />
         </div>
-
+ <ToastContainer />
         <div>
           <label className="text-gray-600 text-sm">অর্ডারের তারিখ</label>
           <input
