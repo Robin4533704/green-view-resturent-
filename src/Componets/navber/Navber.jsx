@@ -23,7 +23,7 @@ const Navber = () => {
   const links = <>
     <NavLink to='/' className='text-blue-600 font-bold'>Home</NavLink>
     <NavLink to="/foodlist" className='text-blue-600 font-bold'>Food Items</NavLink>
-    <NavLink to="/blog" className='text-blue-600 font-bold'>Blog</NavLink>
+    <NavLink to="/blogs" className='text-blue-600 font-bold'>Blog</NavLink>
     <NavLink to="/profiles" className='text-blue-600 font-bold'>My Profile</NavLink>
   </>;
 

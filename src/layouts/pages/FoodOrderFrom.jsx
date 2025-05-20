@@ -1,14 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom'; // 🔹 useNavigate যোগ করো
 
 const FoodOrderForm = () => {
-  const [food, setFood] = useState("");
+  const { id } = useParams();
+  const navigate = useNavigate(); // 🔹 navigate ফাংশন ডিফাইন করো
+  const [foodName, setFoodName] = useState('');
   const [quantity, setQuantity] = useState(1);
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState('');
+  const [loading, setLoading] = useState(true);
+
+  const foodData = [
+    { "id": 1, "name": "Spicy Tuna Roll", "price": 9.99 },
+    { "id": 2, "name": "Chicken Teriyaki", "price": 12.50 },
+    { "id": 3, "name": "Classic Burger Box", "price": 14.00 },
+    { "id": 4, "name": "Vegan Buddha Bowl", "price": 11.75 },
+    { "id": 5, "name": "Butter Chicken Meal", "price": 13.25 },
+    { "id": 6, "name": "Grilled Salmon Delight", "price": 16.99 },
+    { "id": 7, "name": "Tofu Stir Fry", "price": 10.50 },
+    { "id": 8, "name": "BBQ Rib Feast", "price": 18.00 },
+    { "id": 9, "name": "Mushroom Risotto", "price": 12.90 },
+    { "id": 10, "name": "Falafel Wrap Combo", "price": 9.25 },
+    { "id": 11, "name": "Thai Green Curry", "price": 13.50 },
+    { "id": 12, "name": "Beef Shawarma Bowl", "price": 14.75 },
+    { "id": 13, "name": "Mediterranean Platter", "price": 15.00 },
+    { "id": 14, "name": "Mac & Cheese Bites", "price": 8.49 },
+    { "id": 15, "name": "Paneer Tikka Wrap", "price": 11.00 },
+    { "id": 16, "name": "Korean Bibimbap", "price": 13.25 },
+    { "id": 17, "name": "Eggplant Parmesan", "price": 10.99 },
+    { "id": 18, "name": "Shrimp Tacos", "price": 12.60 },
+    { "id": 19, "name": "Stuffed Bell Peppers", "price": 11.80 },
+    { "id": 20, "name": "Creamy Spinach Pasta", "price": 13.10 }
+  ];
+
+  const foodId = parseInt(id);
+  const selectedFood = foodData.find(food => food.id === foodId);
+
+  useEffect(() => {
+    if (selectedFood) {
+      setFoodName(selectedFood.name);
+      setLoading(false);
+    }
+  }, [selectedFood]);
+
+  if (loading) return <div>Loading...</div>;
+  if (!selectedFood) return <div>Food not found</div>;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("this food no a moment");
+    alert(`অর্ডার সফল! ${foodName} - পরিমাণ: ${quantity} - তারিখ: ${date}`);
+    navigate('/'); // 🔹 হোমপেজে নিয়ে যাও
   };
+
+  const totalPrice = (quantity * selectedFood.price).toFixed(2);
 
   return (
     <div className="max-w-md mx-auto mt-20 p-6 bg-white rounded-lg shadow-lg">
@@ -19,14 +62,23 @@ const FoodOrderForm = () => {
           <input
             type="text"
             className="w-full p-3 mt-1 rounded bg-gray-100 outline-none"
-            placeholder="Chooice your Food"
-            value={food}
-            onChange={(e) => setFood(e.target.value)}
-            required
+            value={foodName}
+            readOnly
           />
         </div>
+
         <div>
-          <label className="text-gray-600 text-sm">Quantify</label>
+          <label className="text-gray-600 text-sm">Price</label>
+          <input
+            type="text"
+            className="w-full p-3 mt-1 rounded bg-gray-100 outline-none"
+            value={`$${selectedFood.price.toFixed(2)}`}
+            readOnly
+          />
+        </div>
+
+        <div>
+          <label className="text-gray-600 text-sm">Quantity</label>
           <input
             type="number"
             min="1"
@@ -36,6 +88,17 @@ const FoodOrderForm = () => {
             required
           />
         </div>
+
+        <div>
+          <label className="text-gray-600 text-sm">Total Price</label>
+          <input
+            type="text"
+            className="w-full p-3 mt-1 rounded bg-gray-100 outline-none"
+            value={`$${totalPrice}`}
+            readOnly
+          />
+        </div>
+
         <div>
           <label className="text-gray-600 text-sm">অর্ডারের তারিখ</label>
           <input
@@ -46,10 +109,13 @@ const FoodOrderForm = () => {
             required
           />
         </div>
+
         <button
           type="submit"
           className="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded font-semibold"
-        >Confirm </button>
+        >
+          Confirm
+        </button>
       </form>
     </div>
   );

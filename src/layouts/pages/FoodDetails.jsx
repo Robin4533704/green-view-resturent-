@@ -55,7 +55,7 @@ const FoodDetails = () => {
 </div>
 
   <div>
-    <Link to="/foodorderfrom"><button className='btn bg-blue-400 text-white w-full text-center'>Order New</button></Link>
+    <Link to={`/foodorderfrom/${singleFood.id}`}><button className='btn bg-blue-400 text-white w-full text-center'>Order New</button></Link>
   </div>
        
       </div>

@@ -1,146 +1,22 @@
 [
-  {
-    "id": 1,
-    "thumbnail": "https://assets.roar.media/assets/ZS0fKS04B8xwhD3g_Feature-Image-copy.jpg?w=1200",
-    "name": "Pizza Margherita",
-    "techCategory": "Subscribe New",
-    "price": "$12.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 2,
-    "thumbnail": "https://shomoyeralo.com/2022/06/15/salo_1655298120.jpg",
-    "name": "pasta chize",
-    "techCategory": "Subscribe New",
-    "price": "$14.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 3,
-    "thumbnail": "https://www.songbadprokash.com/media/imgAll/2022July/italian-food-20221226154812.JPG",
-    "name": "Spaghetti Carbonara",
-    "techCategory": "Subscribe New",
-    "price": "$11.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 4,
-    "thumbnail": "https://asset.kalerkantho.com/public/news_images/2017/09/30/232742kalerkantho-30-09-17-AK-7.jpg",
-    "name": "Risotto alla Milanese",
-    "techCategory": "Subscribe New",
-    "price": "$13.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 5,
-    "thumbnail": "https://static.independent.co.uk/2024/04/25/16/iStock-1414575281.jpg",
-    "name": "Gnocchi",
-    "techCategory": "Subscribe New",
-    "price": "$10.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 6,
-    "thumbnail": "https://florafoods.com/wp-content/uploads/2020/09/AdobeStock_224044706-1-scaled-1.jpeg",
-    "name": "Bruschetta",
-    "techCategory": "Subscribe New",
-    "price": "$6.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 7,
-    "thumbnail": "https://static.wixstatic.com/media/2cbff6_ac782b0eaff94ec0881f0299fdb76ab6~mv2.jpg/v1/fill/w_900%2Ch_700%2Cal_c%2Cq_85/2cbff6_ac782b0eaff94ec0881f0299fdb76ab6~mv2.jpg",
-    "name": "Caprese Salad",
-    "techCategory": "Subscribe New",
-    "price": "$7.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 8,
-    "thumbnail": "https://www.tastingtable.com/img/gallery/29-italian-dishes-you-need-to-try-at-least-once/intro-1745944560.jpg",
-    "name": "Arancini",
-    "techCategory": "Appetizer",
-    "price": "$8.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 9,
-    "thumbnail": "https://chenabgourmet.b-cdn.net/wp-content/uploads/2021/06/italian-food.jpeg",
-    "name": "Tiramisu",
-    "techCategory": "Subscribe New",
-    "price": "$5.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 10,
-    "thumbnail": "https://fornopiombo.com/cdn/shop/articles/Delicious-Italian-Style-Menu-Items-To-Serve-At-Your-Dream-Restaurant.jpg?v=1658443933",
-    "name": "Gelato",
-    "techCategory": "Subscribe New",
-    "price": "$4.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 11,
-    "thumbnail": "https://images.openai.com/thumbnails/d59c57771bbda632124699c841b84167.jpeg",
-    "name": "Panna Cotta",
-    "techCategory": "Subscribe New",
-    "price": "$5.49",
-    "frequency": "One-time"
-  },
-  {
-    "id": 12,
-    "thumbnail": "https://cdn.media.amplience.net/i/japancentre/Blog-page-156-sushi/Blog-page-156-sushi?%24poi%24=&fmt=auto&h=391&sm=c&w=556",
-    "name": "Focaccia",
-    "techCategory": "Subscribe New",
-    "price": "$3.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 13,
-    "thumbnail": "https://images.immediate.co.uk/production/volatile/sites/30/2014/01/Top-10-foods-to-try-in-Japan-9763a03.jpg",
-    "name": "Cannoli",
-    "techCategory": "Subscribe New",
-    "price": "$4.49",
-    "frequency": "One-time"
-  },
-  {
-    "id": 14,
-    "thumbnail": "https://feastfulfork.com/wp-content/uploads/2020/10/Beef-Kacchi-Biryani.jpg",
-    "name": "Osso Buco",
-    "techCategory": "Subscribe New",
-    "price": "$16.99",
-    "frequency": "One-time"
-  },
-  {
-    "id": 15,
-    "thumbnail": "https://haalasdastarkhaan.com/wp-content/uploads/2019/01/IMG_7160-600x450.jpg",
-    "name": "Minestrone Soup",
-    "techCategory": "Subscribe New",
-    "price": "$7.49",
-    "frequency": "One-time"
-  },
-  {
-    "id": 16,
-    "thumbnail": "https://foodfusion.com/wp-content/uploads/2019/01/Kachay-Gosht-ki-Biryani-Recipe-by-Food-fusion-2.jpg",
-    "name": "Minestrone Soup",
-    "techCategory": "Subscribe New",
-    "price": "$5.49",
-    "frequency": "One-time"
-  },
-  {
-    "id": 17,
-    "thumbnail": "https://www.twoheapingteaspoons.com/wp-content/uploads/2022/04/20220403130315_IMG_2124-01-scaled.jpeg",
-    "name": "Minestrone Soup",
-    "techCategory": "Subscribe New",
-    "price": "$5.49",
-    "frequency": "One-time"
-  },
-  {
-    "id": 18,
-    "thumbnail": "https://japanspecialist.com/documents/d/japanspecialist/1-the-ultimate-guide-japanese-food-body",
-    "name": " Soup",
-    "techCategory": "Subscribe New",
-    "price": "$5.49",
-    "frequency": "One-time"
-  }
+  { "id": 1, "name": "Spicy Tuna Roll", "price": 9.99 },
+  { "id": 2, "name": "Chicken Teriyaki", "price": 12.50 },
+  { "id": 3, "name": "Classic Burger Box", "price": 14.00 },
+  { "id": 4, "name": "Vegan Buddha Bowl", "price": 11.75 },
+  { "id": 5, "name": "Butter Chicken Meal", "price": 13.25 },
+  { "id": 6, "name": "Grilled Salmon Delight", "price": 16.99 },
+  { "id": 7, "name": "Tofu Stir Fry", "price": 10.50 },
+  { "id": 8, "name": "BBQ Rib Feast", "price": 18.00 },
+  { "id": 9, "name": "Mushroom Risotto", "price": 12.90 },
+  { "id": 10, "name": "Falafel Wrap Combo", "price": 9.25 },
+  { "id": 11, "name": "Thai Green Curry", "price": 13.50 },
+  { "id": 12, "name": "Beef Shawarma Bowl", "price": 14.75 },
+  { "id": 13, "name": "Mediterranean Platter", "price": 15.00 },
+  { "id": 14, "name": "Mac & Cheese Bites", "price": 8.49 },
+  { "id": 15, "name": "Paneer Tikka Wrap", "price": 11.00 },
+  { "id": 16, "name": "Korean Bibimbap", "price": 13.25 },
+  { "id": 17, "name": "Eggplant Parmesan", "price": 10.99 },
+  { "id": 18, "name": "Shrimp Tacos", "price": 12.60 },
+  { "id": 19, "name": "Stuffed Bell Peppers", "price": 11.80 },
+  { "id": 20, "name": "Creamy Spinach Pasta", "price": 13.10 }
 ]

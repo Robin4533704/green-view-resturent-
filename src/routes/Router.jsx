@@ -13,6 +13,7 @@ import PrivetRoute from "../provider/PrivetRoute";
 import FoodList from "../layouts/pages/login/FoodList";
 import Profiles from "../profile picture/Profiles";
 import EditProfile from "../profile picture/EditProfile";
+import Blogs from "../blogs/Blogs";
 
 
 
@@ -35,8 +36,9 @@ export const router = createBrowserRouter([
     element: <PrivetRoute><FoodDetails></FoodDetails></PrivetRoute>
   },
   {
-    path: "/foodorderfrom",
-    element: <PrivetRoute><FoodOrderForm/></PrivetRoute> 
+    path: "/foodorderfrom/:id",
+    element: <FoodOrderForm/>,
+     loader:()=>fetch("/FoodData.json"),
   },
   {
   path: "/foodlist",
@@ -52,6 +54,10 @@ export const router = createBrowserRouter([
   path: "/editprofile",
   element :<EditProfile/>
  },
+ {
+  path : "/blogs",
+  element : <Blogs/>
+ }
     ],
   },
    
