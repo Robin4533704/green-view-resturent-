@@ -20,13 +20,13 @@ else{
   setNameError("")
 }
 const photo= form.photo.value;
-if(photo.length ===0){
- setNameError("photo URL is required");
+if (!photo || photo.trim().length === 0) {
+  setNameError("Photo URL is required");
+} else if (photo.length > 5000) {
+  toast.error("Photo URL too long. Use a smaller image URL.");
+  return;
 }
- else if (photo.length > 500) {
-      toast.error("Photo URL too long. Use a smaller image URL.");
-      return;
-    }
+
 const email= form.email.value;
 const password= form.password.value;
 console.log({name,photo,email,password});
