@@ -54,9 +54,13 @@ const Navber = () => {
       </div>
 
       <div className="navbar-end gap-4">
-        {user && <div className=" text-sm text-green-700 font-bold">{user.email}</div>}
+        {user && <div className=" text-sm text-green-700 font-bold hidden md:inline-block ">{user.email}</div>}
 
-        <img className='w-12 h-12 rounded-full' src={`${user ? user.photoURL : icons}`} alt="" />
+        <img 
+  className="hidden md:inline-block rounded-full" 
+  src={user ? user.photoURL : icons} 
+  alt="" 
+/>
 
          
         {user ? (
