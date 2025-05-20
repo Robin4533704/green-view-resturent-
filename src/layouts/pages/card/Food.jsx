@@ -6,16 +6,19 @@ const Food = ({foodcategory}) => {
   const {thumbnail,id,name,description,ratings,price,frequency,subscription_benefits}= foodcategory;
     return (
         <div className="card bg-base-100 border shadow">
-  <figure className='bg-blue-100  p-6'>
+  <figure className='bg-blue-100 '>
     <img className=' h-[230px]  rounded-2xl'
       src={thumbnail}
       alt="Shoes" />
   </figure>
   <div className="card-body  bg-gray-200 ">
-    <h2 className="card-title">
-     {name}
-      <div className="badge badge-secondary">Italiyan</div>
-    </h2>
+    <div className='flex items-center gap-2'>
+        <img className='w-12 h-12  rounded-full' src={thumbnail} alt="" />
+         <h2 className="card-title">
+          {name}
+          
+        </h2>
+       </div>
     <p>{description}</p>
 
      <div className="flex justify-between border-y-2 border-dashed  items-center mt-3 px-4 mb-2">

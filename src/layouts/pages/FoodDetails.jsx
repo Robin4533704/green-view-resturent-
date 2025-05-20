@@ -10,12 +10,12 @@ const FoodDetails = () => {
   return (
     <div className='mb-10 mt-14'>
       
-      <div className='flex flex-col lg:flex-row md:flex-row gap-8'>
-        <div className='bg-gray-100 rounded-2xl   lg:p-12'>
+      <div className='flex flex-col lg:flex-row md:flex-col gap-8'>
+        <div className='bg-gray-100 rounded-2xl md:pl-[220px]  lg:p-12'>
   <img className='w-[450px] h-[450px] rounded-2xl' src={banner} alt="" />
         </div>
       
-          <div>
+          <div className='md:ml-6'>
         <h1 className='text-5xl pt-4 pb-4 font-bold'>{name}</h1>
         <p className='text-gray-400 border-y-2 border-dashed'>{tech_category}</p>
        <div className='text-orange-400  pt-4 pb-4'>

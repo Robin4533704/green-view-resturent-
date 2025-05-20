@@ -17,7 +17,7 @@ const Profiles = () => {
   };
 
   return (
-    <div className="max-w-md mt-28 mx-auto bg-blue-100 shadow rounded-lg p-6 text-center">
+    <div className=" max-w-md md:mt-24 lg:mt-24 mx-auto bg-blue-100 shadow rounded-lg p-6 text-center">
       <h2 className="text-2xl font-bold mb-4">My Profile</h2>
 
       <div className="flex justify-center mb-4">

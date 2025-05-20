@@ -1,8 +1,5 @@
-import React, { use } from 'react';
+
 import { Link } from 'react-router-dom';
-
-
-
 const Banner = () => {
   
   return (
@@ -12,7 +9,7 @@ const Banner = () => {
   className=" hero min-h-screen "
   style={{
     backgroundImage:
-      "url(public/imges/pexels-photo-1267320.jpeg)",
+      "url(/imges/pexels-photo-1267320.jpeg)",
   }}
 >
     

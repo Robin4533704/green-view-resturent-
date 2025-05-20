@@ -25,25 +25,26 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader:()=>fetch("/FoodData.json"),
+       
         element: <Home />,
+         loader:()=>fetch("/FoodData.json")
       },
       
       
      {
     path: '/fooddetails/:id',
+    element: <PrivetRoute><FoodDetails></FoodDetails></PrivetRoute>,
      loader:()=>fetch("/FoodData.json"),
-    element: <PrivetRoute><FoodDetails></FoodDetails></PrivetRoute>
   },
   {
     path: "/foodorderfrom/:id",
     element: <FoodOrderForm/>,
-     loader:()=>fetch("/FoodData.json"),
   },
   {
   path: "/foodlist",
+  
+  element: <FoodList></FoodList>,
    loader:()=>fetch("/FoodData.json"),
-  element: <FoodList></FoodList> 
 },
 
  {

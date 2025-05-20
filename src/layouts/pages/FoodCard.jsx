@@ -12,10 +12,13 @@ const FoodCard = ({ foodcategory }) => {
         <img className='h-[230px] rounded-2xl' src={thumbnail} alt={name} />
       </figure>
       <div className="card-body bg-gray-200">
-        <h2 className="card-title">
+       <div className='flex items-center gap-2'>
+        <img className='w-12 h-12  rounded-full' src={thumbnail} alt="" />
+         <h2 className="card-title">
           {name}
-          <div className="badge badge-secondary">Italian</div>
+          
         </h2>
+       </div>
         <p>{description}</p>
 
         <div className="flex justify-between border-y-2 border-dashed items-center mt-3 px-4 mb-2">
