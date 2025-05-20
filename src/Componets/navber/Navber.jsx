@@ -57,23 +57,14 @@ const Navber = () => {
         {user && <div className=" text-sm text-green-700 font-bold">{user.email}</div>}
 
         <img className='w-12 h-12 rounded-full' src={`${user ? user.photoURL : icons}`} alt="" />
-{/* 
-         {user && (
-    <div className="w-10">
-      <img
-        className="rounded-full"
-        alt="User Profile"
-        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-      />
-    </div>
-  )} */}
+
          
         {user ? (
           <button onClick={handleLogout} className="btn btn-secondary">Log Out</button>
         ) : (
           <>
             <Link to="/auth/login" className="btn btn-primary">Login</Link>
-            <Link to='/auth/register' className="btn btn-outline btn-success">Sign Up</Link>
+            <Link to='/auth/register' className="btn btn-outline btn-success hover:text-white">Sign Up</Link>
           </>
         )}
       </div>

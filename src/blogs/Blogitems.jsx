@@ -21,16 +21,26 @@ const Blogitems = () => {
     <BLogimg/>
 </div>
 
-   <div className='bg-gray-100 p-15 mx-auto flex flex-col items-center rounded-2xl mt-12'>
-    <div>
-        <h1 className='text-3xl text-black p-4 font-bold'>Why Choose Easy Sub?</h1>
-    </div>
-    <div className=''>
-        <h1 className='p-4 flex items-center gap-5'><IoCheckmarkSharp className='text-xl  text-blue-400'/>Tailored experiences that surprise and delight every month.</h1>
-        <h1 className='p-4 flex items-center gap-5'><IoCheckmarkSharp className='text-xl text-blue-400' />Support small local businesses and discover hidden gems.</h1>
-        <h1 className='p-4 flex items-center gap-5'><IoCheckmarkSharp className='text-xl text-blue-400' />High-quality, handpicked products delivered right to your doorstep.</h1>
-    </div>
-   </div>
+  <div className='bg-gray-100 p-15 mx-auto flex flex-col items-center rounded-2xl mt-12'>
+  <div>
+    <h1 className='text-3xl text-black p-4 font-bold'>Why Choose Easy Sub?</h1>
+  </div>
+  <div>
+    <h1 className='p-4 flex items-center gap-5'>
+      <IoCheckmarkSharp className='text-7xl  md:text-3xl text-orange-400' />
+      Tailored experiences that surprise and delight every month.
+    </h1>
+    <h1 className='p-4 flex items-center gap-5'>
+      <IoCheckmarkSharp className='text-7xl  md:text-3xl text-orange-400' />
+      Support small local businesses and discover hidden gems.
+    </h1>
+    <h1 className='p-4 flex items-center gap-5'>
+      <IoCheckmarkSharp className='text-7xl md:text-3xl text-orange-400' />
+      High-quality, handpicked products delivered right to your doorstep.
+    </h1>
+  </div>
+</div>
+
    <div className='pt-12 pb-6'>
     <Blogsdetails/>
    </div>
