@@ -1,52 +1,51 @@
 import React from 'react';
- import { FaRegStar } from "react-icons/fa";
-  import { Link } from 'react-router-dom';
-const Food = ({foodcategory}) => {
+import { FaRegStar } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
+const Food = ({ foodcategory }) => {
   if (!foodcategory) return null;
-  const {thumbnail,id,name,description,ratings,price,frequency,subscription_benefits}= foodcategory;
-    return (
-        <div className=" m-2 card bg-base-100  shadow">
-  <figure className='bg-blue-100 '>
-    <img className=' lg:h-[230px]  rounded-2xl'
-      src={thumbnail}
-      alt="Shoes" />
-  </figure>
-  <div className="card-body  bg-gray-200 ">
-    <div className='flex items-center gap-2'>
-        <img className='w-12 h-12  rounded-full' src={thumbnail} alt="" />
-         <h2 className="card-title">
-          {name}
-          
-        </h2>
-       </div>
-    <p>{description}</p>
+  const { thumbnail, id, name, description, ratings, price, frequency, subscription_benefits } = foodcategory;
 
-     <div className="flex justify-between border-y-2 border-dashed  items-center mt-3 mb-2">
+  return (
+    <div className="m-4 max-w-sm w-full bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <figure className="bg-blue-100">
+        <img
+          className="w-full h-48 object-cover"
+          src={thumbnail}
+          alt={name}
+        />
+      </figure>
+      <div className="p-4">
+        <div className="flex items-center space-x-4 mb-4">
+          <img
+            className="w-12 h-12 rounded-full object-cover"
+            src={thumbnail}
+            alt={name}
+          />
+          <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
+        </div>
+        <p className="text-gray-600 text-sm mb-4">{description}</p>
+        <div className="flex justify-between items-center border-t border-b border-gray-200 py-2 text-sm text-gray-700">
           <span className="text-green-600 font-semibold">${price}</span>
-          <div><p>{frequency}</p></div>
+          <span>{frequency}</span>
           <div className="flex items-center text-yellow-500">
-          
-            <span className="text-sm font-medium">{ratings}</span><FaRegStar />
+            <span className="mr-1">{ratings}</span>
+            <FaRegStar />
           </div>
-          </div>
-    
-
-     <ul className="list-disc pl-5 text-sm text-gray-600">
-  {subscription_benefits.map((benefit, index) => (
-    <li key={index}>{benefit}</li>
-  ))}
-</ul>
-  
-  <Link to={`/fooddetails/${id}`} className='btn bg-blue-500 w-full text-white'>
-  View More
-</Link>
-
-
-  </div>
-</div>
-    );
+        </div>
+        <ul className="list-disc list-inside text-sm text-gray-600 mt-4 space-y-1">
+          {subscription_benefits.map((benefit, index) => (
+            <li key={index}>{benefit}</li>
+          ))}
+        </ul>
+        <Link to={`/fooddetails/${id}`}>
+          <button className="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors duration-300">
+            View More
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Food;
-
-

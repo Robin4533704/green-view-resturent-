@@ -1,14 +1,9 @@
 import React from 'react';
-import Navber from '../../Componets/navber/Navber';
 import { Outlet } from 'react-router-dom';
-
-
-
-
-
+import Navber from '../../../Componets/navber/Navber';
 const AuthLayout = () => {
     return (
-        <div className=''>
+         <div className=''>
             <header >
                 <Navber/>
             </header>

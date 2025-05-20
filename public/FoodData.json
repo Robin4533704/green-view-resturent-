@@ -2,8 +2,8 @@
      {
     "id": 1,
     "name": "Pizza Margherita",
-    "thumbnail": "https://assets.roar.media/assets/ZS0fKS04B8xwhD3g_Feature-Image-copy.jpg?w=1200",
-    "banner": "https://assets.roar.media/assets/ZS0fKS04B8xwhD3g_Feature-Image-copy.jpg?w=1200",
+    "thumbnail": "https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg",
+    "banner": "https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg",
     "frequency": "Daily/Weekly/Monthly",
     "price": 150.00,
     "description": "Bangladesh's first-ever meal subscription service offering customizable, chef-crafted dishes delivered to your doorstep.",
@@ -287,11 +287,11 @@
   },
   {
     "id": 14,
-    "name": "pasta chize",
-    "thumbnail": "https://shomoyeralo.com/2022/06/15/salo_1655298120.jpg",
-    "banner": "https://shomoyeralo.com/2022/06/15/salo_1655298120.jpg",
+    "name": "Spaghetti alla Carbonara",
+    "thumbnail": "https://www.insidetherustickitchen.com/wp-content/uploads/2020/03/Spaghetti-alla-Carbonara-1200px-Inside-the-Rustic-Kitchen-1.jpg",
+    "banner": "https://i.ibb.co/rGmSFT67/download-1.jpg",
     "frequency": "Daily",
-    "price": 12.00,
+    "price": 18.00,
     "description": "Enjoy a diverse range of meals from handpicked restaurants at a fixed daily price, plus free doorstep delivery.",
     "tech_category": "Restaurant Subscription",
     "features": [
@@ -309,8 +309,8 @@
   },
   {
     "id": 15,
-    "name": "Kacchi biriany",
-    "thumbnail": "https://fornopiombo.com/cdn/shop/articles/Delicious-Italian-Style-Menu-Items-To-Serve-At-Your-Dream-Restaurant.jpg?v=1658443933",
+    "name": "Lasagna",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjsuppKNOCTEUf5Ta_5aKsRnN4d6c5U-48scKYbNbeT1DiDW1ISEx&usqp=CAE&s",
     "banner": "https://fornopiombo.com/cdn/shop/articles/Delicious-Italian-Style-Menu-Items-To-Serve-At-Your-Dream-Restaurant.jpg?v=1658443933",
     "frequency": "Daily/Weekly",
     "price": 180.00,

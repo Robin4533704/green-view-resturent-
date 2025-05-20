@@ -7,13 +7,14 @@ import FoodDetails from "../layouts/pages/FoodDetails";
 import FoodOrderForm from "../layouts/pages/FoodOrderFrom";
 import Login from "../layouts/pages/login/Login";
 import Register from "../layouts/pages/Register";
-import AuthLayout from "../layouts/pages/AuthLayout";
+
 
 import PrivetRoute from "../provider/PrivetRoute";
 import FoodList from "../layouts/pages/login/FoodList";
 import Profiles from "../profile picture/Profiles";
 import EditProfile from "../profile picture/EditProfile";
 import Blogs from "../blogs/Blogs";
+import AuthLayout from "../layouts/pages/root/AuthLayout";
 
 
 
