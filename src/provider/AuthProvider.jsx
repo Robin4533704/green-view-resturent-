@@ -1,11 +1,9 @@
 import React, { createContext, useEffect, useState } from 'react';
 import {
   createUserWithEmailAndPassword,
-
-  onAuthStateChanged,
+onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
-  // ✅ renamed
 } from "firebase/auth";
 import { getAuth, updateProfile } from "firebase/auth";
 

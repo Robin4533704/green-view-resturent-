@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom'; // 🔹 useNavigate যোগ করো
+import { useParams, useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
- import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import Loading from './Loading';
+
 const FoodOrderForm = () => {
   const { id } = useParams();
-  const navigate = useNavigate(); // 🔹 navigate ফাংশন ডিফাইন করো
+  const navigate = useNavigate();
   const [foodName, setFoodName] = useState('');
   const [quantity, setQuantity] = useState(1);
   const [date, setDate] = useState('');
@@ -37,28 +39,32 @@ const FoodOrderForm = () => {
   const selectedFood = foodData.find(food => food.id === foodId);
 
   useEffect(() => {
-    if (selectedFood) {
-      setFoodName(selectedFood.name);
-      setLoading(false);
+    const foodId = parseInt(id);
+    const selected = foodData.find(food => food.id === foodId);
+    if (selected) {
+      setFoodName(selected.name);
+      
     }
-  }, [selectedFood]);
+    setLoading(false);
+  },[id]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading />;
   if (!selectedFood) return <div>Food not found</div>;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   swal({
+    const totalPrice = (quantity * selectedFood.price).toFixed(2);
+    swal({
       title: 'অর্ডার সফল!',
-      text: `${foodName} - পরিমাণ: ${quantity} -মূল্য: ${totalPrice} - তারিখ: ${date}`,
+      text: `${foodName} - পরিমাণ: ${quantity} - মূল্য: ${totalPrice} - তারিখ: ${date}`,
       icon: 'success',
       button: 'ঠিক আছে',
-      }).then(() => {
-  toast("Your Order successful!");
-  setTimeout(() => {
-    navigate('/');
-  }, 3500); // টোস্ট দেখার জন্য কিছু সময় দিন
-});
+    }).then(() => {
+      toast("Your Order successful!");
+      setTimeout(() => {
+        navigate('/');
+      }, 3500);
+    });
   };
 
   const totalPrice = (quantity * selectedFood.price).toFixed(2);
@@ -82,7 +88,7 @@ const FoodOrderForm = () => {
           <input
             type="text"
             className="w-full p-3 mt-1 rounded bg-gray-100 outline-none"
-            value={`$${selectedFood.price.toFixed(2)}`}
+            value={`${selectedFood.price.toFixed(2)}`}
             readOnly
           />
         </div>
@@ -104,11 +110,13 @@ const FoodOrderForm = () => {
           <input
             type="text"
             className="w-full p-3 mt-1 rounded bg-gray-100 outline-none"
-            value={`$${totalPrice}`}
+            value={`${totalPrice}`}
             readOnly
           />
         </div>
- <ToastContainer />
+
+        <ToastContainer />
+
         <div>
           <label className="text-gray-600 text-sm">অর্ডারের তারিখ</label>
           <input
